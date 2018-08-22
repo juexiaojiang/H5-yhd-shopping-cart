@@ -1,0 +1,1554 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>shoppingCart_2018</title>
+    <meta name="viewport" content="minimal-ui,width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="../resource/css/shoppingCart_2018.css">
+    <link rel="stylesheet" href="http://static.yhd.com/iconfont/font-h5/iconfont.css">
+    <!--ice 去除服务器上Icon-->
+    <!--<link rel="stylesheet" type="text/css" href="http://10.8.129.219:3000/iconfonts/touchweb/fonts/touchweb.css">-->
+    
+    <script src="https://img.yihaodianimg.com/yhdfe/public/scripts/lib/requirejs/require.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="touchweb-com_header ">
+    
+    
+    <!-- left start -->
+    <a href="javascript:;" class="left icon-back"></a>
+    <!-- left end -->
+    
+    
+    
+    
+    
+        
+        <!-- title start -->
+        <h1>购物车</h1>
+        <!-- title end -->
+        
+    
+    
+</div>
+
+
+
+<div class="globalShopcartProvinceSwitch">
+  <div class="provinceSwitch">
+    <div class="provinceSwitch_body">
+      <!-- 购物车公告 -->
+      <div class="cart_notice">
+        <span>购物车公告购物车公告购物车公告，一行显示，一行显示,购物车公告购物车公告购物车公告</span>
+      </div>
+      <!-- 当前网络不可用 -->
+      <div class="cart_notice" style="display:none;">
+        <span>当前网络不可用，请检查网络设置</span>
+      </div>
+      <!-- 购物车编辑状态 -->
+      <div class="cart_edit" style="display:none;">
+        <span>您的购物车里有无货商品,<strong>一键删除无货商品</strong></span>
+      </div>
+      <div class="product_body">
+        <!-- 以下是自营商品 -->
+        <!-- 购物车公告未登录 -->
+        <div class="cart_log">
+          <span>登录后可同步购物车中的商品<i>登录</i></span>
+        </div>
+       <!--  一个购物模块为一个卡片，即itemLink -->
+        <div class="itemLink">
+           <!-- 卡片的头部信息 -->
+          <div class="main_tit fixedTit">
+            <div class="top_head">
+              <h2>
+                <label class="handle top"><input type="checkbox" checked="checked" name="check"></label>
+                <a href="#">自营</a>
+                <!-- 运费的第一种状态 运费不足 -->
+                <div class="freight_wrap">
+                  <img src="../resource/images/shopping_cart/shuoming.png" alt="">
+                  <p>
+                    还差<strong>￥88.0</strong>元免运费
+                    <span>凑单</span>
+                    <i class="iconfont icon-right_arrow"></i>
+                  </p>
+                </div>
+                <!-- 优惠券 -->
+                <span class="for_freebtn cheap_coupon">优惠券</span>
+              </h2>
+            </div>
+          </div>
+          <!-- 卡片的商品信息 -->
+          <div class="content_wrap show">
+            <div class="product_List pkg_product_list">
+              <!-- 商品列表的头部信息 -->
+              <div class="pkg_prodlist_header">
+                <div class="sale_mod">
+                    <div class="sale_info">
+                      <span class="tag">满赠</span>已满足 满￥199可领赠品
+                    </div>
+                    <span class="state has_join">更换赠品</span>
+                    <i class="iconfont icon-right_arrow"></i>
+                </div>
+              </div>
+              <!-- 赠品信息 -->
+              <div class="pkg_prodlist_gift_inf">
+                <div class="gift_class">
+                    <span>赠品</span>
+                </div>
+               <div class="pkg_prodlist_gift_slide_wrap">
+                <div class="pkg_prodlist_gift_wrap">
+                  <div class="pic">
+                    <img src="../resource/images/shopping_cart/gift_pic.png" alt="">
+                  </div>
+                  <div class="gift_con_wrap">
+                    <div class="title">进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</div>
+                    <div class="price_box">
+                      <span class="price">￥0.00</span>
+                      <span class="num">x1</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+                </div>
+               </div>
+                <!-- 如果有两个以上赠品就加上这个元素 -->
+                <div class="gift_gap">
+                  <img src="../resource/images/shopping_cart/gap.png" alt="">
+                </div>
+               <!--  结束 -->
+               <div class="pkg_prodlist_gift_slide_wrap">
+                <div class="pkg_prodlist_gift_wrap">
+                  <div class="pic">
+                    <img src="../resource/images/shopping_cart/gift_pic.png" alt="">
+                  </div>
+                  <div class="gift_con_wrap">
+                    <div class="title">进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</div>
+                    <div class="price_box">
+                      <span class="price">￥0.00</span>
+                      <span class="num">x1</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+                </div>
+               </div>
+                 <div class="gift_gap">
+                  <img src="../resource/images/shopping_cart/gap.png" alt="">
+                </div>
+               <!--  结束 -->
+               <div class="pkg_prodlist_gift_slide_wrap">
+                <div class="pkg_prodlist_gift_wrap">
+                  <div class="pic">
+                    <img src="../resource/images/shopping_cart/gift_pic.png" alt="">
+                  </div>
+                  <div class="gift_con_wrap">
+                    <div class="title">进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</div>
+                    <div class="price_box">
+                      <span class="price">￥0.00</span>
+                      <span class="num">x1</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+                </div>
+              </div>
+              </div>
+              <!-- 商品信息 -->
+             <div class="pkg_prodlist_tit_wrap">
+              <div class="pkg_prodlist_tit">
+                <div class="item">
+                  <div class="link">
+                    <label class="handle"><input type="checkbox" checked="checked" name="check"></label>
+                    <div class="imgbox">
+                      <img src="../resource/images/shopping_cart/pro_pic.png" alt="" class="pic">
+                    </div>
+                    <div class="right_info">
+                      <div class="title">
+                        <h2><a href="javascript:;" class="product_title"><span class="pkg_tags">生鲜</span>进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</a></h2>
+                      </div>
+                      <div class="desc">
+                        <span>12个悦享礼盒装<i class="iconfont icon-down_arrow"></i></span>
+                      </div>
+                      <div class="price_box">
+                        <div class="price_wrap">
+                          <span class="price">￥30.00</span><span class="price_add">+5000金币</span>
+                        </div>
+                        <div class="buy_num">
+                          <span class="num_reduce disable"><i class="iconfont icon-reduce"></i></span>
+                          <input type="number" class="num_box" data-min="1" data-max="100" value="1">
+                          <span class="num_add"><i class="iconfont icon-add1"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lower_price_notice clearfix">
+                      <span class="lower_price">比加入时降3.98元</span><span class="buying_min_num">19件起购</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+              </div>
+             </div>
+             <!-- 商品参与的促销信息 -->
+              <div class="pkg_prodlist_label_con">
+                <div class="pkg_prodlist_label_con_wrap">
+                  <div class="pkg_prodlist_label_position" style="position:relative">
+                    <div class="label_sale_info">
+                      <span class="label_tag">促销</span>满￥199可领赠品
+                    </div>
+                     <div class="label_sale_info_desc">
+                          <span class="change_coupon">修改</span>
+                     </div>
+                  </div>
+                  <div class="pkg_prodlist_label_position" style="position:relative">
+                    <div class="label_sale_info">
+                      <span class="label_tag">标签</span>自定义促销内容超过一行就隐藏
+                    </div>
+                    <div class="label_sale_info_desc">
+                      <span class="num">x1</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 商品之间的间隔 -->
+              <div class="pro_gap">
+                <img src="../resource/images/shopping_cart/gap.png" alt="">
+              </div>
+              <!-- 商品信息 -->
+             <div class="pkg_prodlist_tit_wrap">
+              <div class="pkg_prodlist_tit">
+                <div class="item">
+                  <div class="link">
+                    <label class="handle"><input type="checkbox" checked="checked" name="check"></label>
+                    <div class="imgbox">
+                      <img src="../resource/images/shopping_cart/pro_pic.png" alt="" class="pic">
+                      <img src="../resource/images/shopping_cart/on_buying.png" alt="" class="mask">
+                    </div>
+                    <div class="right_info">
+                      <div class="title">
+                        <h2><a href="javascript:;" class="product_title">进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片薯片薯片</a></h2>
+                      </div>
+                      <div class="price_box">
+                        <span class="price">￥30.00</span>
+                        <div class="buy_num">
+                          <span class="num_reduce disable"><i class="iconfont icon-reduce"></i></span>
+                          <input type="number" class="num_box" data-min="1" data-max="100" value="1">
+                          <span class="num_add"><i class="iconfont icon-add1"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+              </div>
+             </div>
+            </div>
+            <div class="product_List pkg_product_list">
+              <div class="pkg_prodlist_header">
+                <div class="sale_mod">
+                    <div class="sale_info">
+                      <span class="tag">满减</span>购满￥1000立减<strong>￥230</strong>还差<strong>￥200</strong>
+                    </div>
+                    <span class="state has_join">更换赠品</span>
+                    <i class="iconfont icon-right_arrow"></i>
+                </div>
+              </div>
+             <div class="pkg_prodlist_tit_wrap">
+              <div class="pkg_prodlist_tit">
+                <div class="item">
+                  <div class="link">
+                    <label class="handle"><input type="checkbox" checked="checked" name="check"></label>
+                    <div class="imgbox">
+                      <img src="../resource/images/shopping_cart/pro_pic.png" alt="" class="pic">
+                    </div>
+                    <div class="right_info">
+                      <div class="title">
+                        <h2><a href="javascript:;" class="product_title"><span class="pkg_tags">生鲜</span>进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</a></h2>
+                      </div>
+                      <div class="desc">
+                        <span>12个悦享礼盒装<i class="iconfont icon-down_arrow"></i></span>
+                      </div>
+                      <div class="price_box">
+                        <span class="price">￥30.00</span>
+                        <div class="buy_num">
+                          <span class="num_reduce disable"><i class="iconfont icon-reduce"></i></span>
+                          <input type="number" class="num_box" data-min="1" data-max="100" value="1">
+                          <span class="num_add"><i class="iconfont icon-add1"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+              </div>
+             </div>
+              <div class="pkg_prodlist_label_con">
+                <div class="pkg_prodlist_label_con_wrap">
+                  <div class="pkg_prodlist_label_position" style="position:relative">
+                    <div class="label_sale_info">
+                      <span class="label_tag">促销</span>满￥199可领赠品
+                    </div>
+                     <div class="label_sale_info_desc">
+                          <span>修改</span>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro_gap">
+                <img src="../resource/images/shopping_cart/gap.png" alt="">
+              </div>
+             <div class="pkg_prodlist_tit_wrap">
+              <div class="pkg_prodlist_tit">
+                <div class="item">
+                  <div class="link">
+                    <label class="handle"><input type="checkbox" checked="checked" name="check"></label>
+                    <div class="imgbox">
+                      <img src="../resource/images/shopping_cart/pro_pic.png" alt="" class="pic">
+                      <img src="../resource/images/shopping_cart/on_buying.png" alt="" class="mask">
+                    </div>
+                    <div class="right_info">
+                      <div class="title">
+                        <h2><a href="javascript:;" class="product_title">进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</a></h2>
+                      </div>
+                      <div class="price_box">
+                        <span class="price">￥30.00</span>
+                        <div class="buy_num">
+                          <span class="num_reduce disable"><i class="iconfont icon-reduce"></i></span>
+                          <input type="number" class="num_box" data-min="1" data-max="100" value="1">
+                          <span class="num_add"><i class="iconfont icon-add1"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+              </div>
+             </div>
+              <div class="pkg_prodlist_label_con">
+                <div class="pkg_prodlist_label_con_wrap">
+                  <div class="pkg_prodlist_label_position" style="position:relative">
+                    <div class="label_sale_info">
+                      <span class="label_tag">促销</span>满￥199可领赠品
+                    </div>
+                     <div class="label_sale_info_desc">
+                          <span>修改</span>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>         
+            <!-- 商品列表E -->
+          </div>
+        </div>
+        <!-- 自营商品结束 -->
+        <!-- 以下是跨店铺商品 -->
+        <div class="itemLink">
+          <div class="main_tit fixedTit">
+            <div class="top_head">
+              <h2>
+                <label class="handle top">
+                  <input type="checkbox" checked="checked" name="check">
+                </label>
+                <a href="#">跨店铺活动标题<img src="../resource/images/shopping_cart/arrow.png" alt=""></a>
+                <!--  运费的第二种状态 免运费 -->
+                <div class="freight_wrap">
+                    <p>
+                      免运费
+                    </p>
+                </div>
+                <span class="for_freebtn">
+                  优惠券
+                </span>
+              </h2>
+            </div>
+          </div>
+          <div class="content_wrap show">
+            <div class="product_List pkg_product_list">
+              <div class="pkg_prodlist_header">
+                <div class="sale_mod">
+                    <div class="sale_info">
+                      <span class="tag">跨店铺满减</span>购满￥1000立减<strong>￥230</strong>
+                    </div>
+                    <span class="state has_join">凑单</span>
+                    <i class="iconfont icon-right_arrow"></i>
+                </div>
+              </div>
+             <div class="pkg_prodlist_tit_wrap">
+              <div class="pkg_prodlist_tit">
+                <div class="item">
+                  <div class="link">
+                    <label class="handle"><input type="checkbox" checked="checked" name="check"></label>
+                    <div class="imgbox">
+                      <img src="../resource/images/shopping_cart/pro_pic.png" alt="" class="pic">
+                      <img src="../resource/images/shopping_cart/mask_2.png" alt="" class="mask">
+                    </div>
+                    <div class="right_info">
+                      <div class="title">
+                        <h2><a href="javascript:;" class="product_title"><span class="pkg_tags">生鲜</span>进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</a></h2>
+                      </div>
+                      <div class="desc">
+                        <span>12个悦享礼盒装<i class="iconfont icon-down_arrow"></i></span>
+                      </div>
+                      <div class="price_box">
+                        <span class="price">￥30.00</span>
+                        <div class="buy_num">
+                          <span class="num_reduce disable"><i class="iconfont icon-reduce"></i></span>
+                          <input type="number" class="num_box" data-min="1" data-max="100" value="1">
+                          <span class="num_add"><i class="iconfont icon-add1"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- 跨店铺商品结束 -->
+        <!-- 以下是私人店铺商品 -->
+        <div class="itemLink">
+          <div class="main_tit fixedTit">
+            <div class="top_head">
+              <h2>
+                <label class="handle top">
+                  <input type="checkbox" checked="checked" name="check">
+                </label>
+                <a href="#">MACYS官方海外旗舰店<img src="../resource/images/shopping_cart/arrow.png" alt=""></a>
+                <!-- 如果是优惠券加class名cheap_coupon -->
+                <div class="freight_wrap">
+                    <p>
+                      免运费
+                    </p>
+                </div>
+                <span class="for_freebtn">优惠券</span>
+              </h2>
+            </div>
+          </div>
+          <div class="content_wrap show">
+            <div class="product_List pkg_product_list">
+             <div class="pkg_prodlist_tit_wrap">
+              <div class="pkg_prodlist_tit">
+                <div class="item">
+                  <div class="link">
+                    <label class="handle"><input type="checkbox" checked="checked" name="check"></label>
+                    <div class="imgbox">
+                      <img src="../resource/images/shopping_cart/pro_pic.png" alt="" class="pic">
+                      <img src="../resource/images/shopping_cart/mask_2.png" alt="" class="mask">
+                    </div>
+                    <div class="right_info">
+                      <div class="title">
+                        <h2><a href="javascript:;" class="product_title"><span class="pkg_tags">生鲜</span>进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</a></h2>
+                      </div>
+                      <div class="desc">
+                        <span>12个悦享礼盒装<i class="iconfont icon-down_arrow"></i></span>
+                      </div>
+                      <div class="price_box">
+                        <span class="price">￥30.00</span>
+                        <div class="buy_num">
+                          <span class="num_reduce disable"><i class="iconfont icon-reduce"></i></span>
+                          <input type="number" class="num_box" data-min="1" data-max="100" value="1">
+                          <span class="num_add"><i class="iconfont icon-add1"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+              </div>
+            </div>
+            </div>
+            <div class="product_List pkg_product_list">
+             <div class="pkg_prodlist_tit_wrap">
+              <div class="pkg_prodlist_tit">
+                <div class="item">
+                  <div class="link">
+                    <label class="handle"><input type="checkbox" checked="checked" name="check"></label>
+                    <div class="imgbox">
+                      <img src="../resource/images/shopping_cart/pro_pic.png" alt="" class="pic">
+                      <img src="../resource/images/shopping_cart/mask_2.png" alt="" class="mask">
+                    </div>
+                    <div class="right_info">
+                      <div class="title">
+                        <h2><a href="javascript:;" class="product_title"><span class="pkg_tags">生鲜</span>进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</a></h2>
+                      </div>
+                      <div class="desc">
+                        <span>12个悦享礼盒装<i class="iconfont icon-down_arrow"></i></span>
+                      </div>
+                      <div class="price_box">
+                        <span class="price">￥30.00</span>
+                        <div class="buy_num">
+                          <span class="num_reduce disable"><i class="iconfont icon-reduce"></i></span>
+                          <input type="number" class="num_box" data-min="1" data-max="100" value="1">
+                          <span class="num_add"><i class="iconfont icon-add1"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <!-- 私人店铺商品结束 -->
+        <!-- 以下是失效商品 -->
+        <div class="itemLink">
+          <div class="main_tit fixedTit">
+            <div class="top_head">
+              <h2></a><a href="#">如下为失效商品</a>
+                <span class="for_freebtn out_of_stock">
+                  一键清除无货商品
+                </span>
+              </h2>
+            </div>
+          </div>
+          <div class="content_wrap show">
+            <div class="product_List pkg_product_list out_of_stock">
+             <div class="pkg_prodlist_tit_wrap">
+              <div class="pkg_prodlist_tit_invalid">
+                <div class="item">
+                  <div class="link">
+                    <label class="handle"><img src="../resource/images/shopping_cart/out_of_stock.png" alt="" class="pic"></label>
+                    <div class="imgbox">
+                      <img src="../resource/images/shopping_cart/pro_pic.png" alt="" class="pic out_of_stock">
+                      <img src="../resource/images/shopping_cart/out_of_stock_mask.png" alt="" class="mask">
+                    </div>
+                    <div class="right_info">
+                      <div class="title">
+                        <h2><a href="javascript:;" class="product_title out_of_stock">进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</a></h2>
+                      </div>
+                      <div class="desc">
+                        <span>12个悦享礼盒装<i class="iconfont icon-down_arrow"></i></span>
+                      </div>
+                      <div class="price_box">
+                        <span class="price out_of_stock">￥30.00</span>
+                        <div class="find_similar_btn">
+                          <span>找相似</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+              </div> -->
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- 结束 -->
+        <!-- 以下是套装商品 -->
+        <div class="itemLink">
+          <div class="content_wrap show">
+            <div class="product_List pkg_product_list">
+              <div class="pkg_prodlist_header suit">
+                <div class="sale_mod">
+                    <label class="handle top">
+                       <input type="checkbox" checked="checked" name="check">
+                    </label>
+                    <div class="suit_label_wrap">
+                      <span class="suit_label">[套装]</span>
+                      <a href="#" class="suit">MACYS官方海外旗舰店MACYS官方海外旗舰店MACYS官方海外旗舰店</a>
+                    </div>
+                </div>
+              </div>
+             <div class="pkg_prodlist_tit_wrap">
+              <div class="pkg_prodlist_tit suit">
+                <div class="sale_info suit">
+                    <span class="tag on_order">抢购中</span><span class="on_order_top">抢购结束时间 8月11日 10:03</span>
+                </div>
+                <div class="item">
+                  <div class="link">
+                    <div class="imgbox suit">
+                      <img src="../resource/images/shopping_cart/pro_pic.png" alt="" class="pic">
+                    </div>
+                    <div class="right_info">
+                      <div class="title">
+                        <h2><a href="javascript:;" class="product_title">进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</a></h2>
+                      </div>
+                      <div class="desc">
+                        <span>12个悦享礼盒装<i class="iconfont icon-down_arrow"></i></span>
+                      </div>
+                      <div class="suit_num_box clearfix">
+                       <span class="suit_num"><i class="iconfont icon-guanbi"></i>9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+              </div>
+             </div>
+              <div class="pkg_prodlist_label_con suit">
+                <div class="pkg_prodlist_label_con_wrap">
+                  <div class="pkg_prodlist_label_position" style="position:relative">
+                    <div class="label_sale_info">
+                      <span class="label_tag">促销</span>满￥199可领赠品
+                    </div>
+                     <div class="label_sale_info_desc">
+                          <span>修改</span>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro_gap">
+                <img src="../resource/images/shopping_cart/gap.png" alt="">
+              </div>
+             <div class="pkg_prodlist_tit_wrap">
+              <div class="pkg_prodlist_tit suit">
+                <div class="item">
+                  <div class="link">
+                    <div class="imgbox suit">
+                      <img src="../resource/images/shopping_cart/pro_pic.png" alt="" class="pic">
+                    </div>
+                    <div class="right_info suit">
+                      <div class="title">
+                        <h2><a href="javascript:;" class="product_title">进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</a></h2>
+                      </div>
+                      <div class="desc">
+                        <span>12个悦享礼盒装<i class="iconfont icon-down_arrow"></i></span>
+                      </div>
+                      <div class="suit_num_box clearfix">
+                       <span class="suit_num"><i class="iconfont icon-guanbi"></i>9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+              </div>
+             </div>
+              <div class="price_box suit">
+                <span class="label">套装价</span>
+                <span class="price">￥1930.00</span>
+                <div class="buy_num">
+                    <span class="num_reduce disable"><i class="iconfont icon-reduce"></i></span>
+                    <input type="number" class="num_box" data-min="1" data-max="100" value="1">
+                    <span class="num_add"><i class="iconfont icon-add1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 套装商品结束 -->
+        <!-- 以下是预约中商品 -->
+        <div class="itemLink">
+          <div class="content_wrap show">
+            <div class="product_List pkg_product_list">
+              <div class="pkg_prodlist_tit_wrap">
+               <div class="pkg_prodlist_tit">
+                  <div class="sale_info on_order">
+                    <span class="tag on_order">预约中</span>抢购开始时间 8月11日 10:03
+                  </div>
+                  <div class="item">
+                    <div class="link">
+                      <label class="handle"><input type="checkbox" checked="checked" name="check"></label>
+                      <div class="imgbox">
+                        <img src="../resource/images/shopping_cart/pro_pic.png" alt="" class="pic">
+                      </div>
+                      <div class="right_info">
+                        <div class="title">
+                          <h2><a href="javascript:;" class="product_title">进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</a></h2>
+                        </div>
+                        <div class="desc">
+                          <span>12个悦享礼盒装<i class="iconfont icon-down_arrow"></i></span>
+                        </div>
+                        <div class="price_box">
+                          <span class="price">￥30.00</span>
+                          <div class="buy_num">
+                            <span class="num_reduce disable"><i class="iconfont icon-reduce"></i></span>
+                            <input type="number" class="num_box" data-min="1" data-max="100" value="1">
+                            <span class="num_add"><i class="iconfont icon-add1"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <!-- 预约商品结束 -->
+        <!-- 以下是抢购中商品 -->
+        <div class="itemLink">
+          <div class="content_wrap show">
+            <div class="product_List pkg_product_list">
+             <div class="pkg_prodlist_tit_wrap">
+              <div class="pkg_prodlist_tit">
+                <div class="sale_info on_order">
+                  <span class="tag on_order">抢购中</span>抢购结束时间 8月11日 10:03
+                </div>
+                <div class="item">
+                  <div class="link">
+                    <label class="handle"><input type="checkbox" checked="checked" name="check" class="out_of_stock"></label>
+                    <div class="imgbox">
+                      <img src="../resource/images/shopping_cart/pro_pic.png" alt="" class="pic">
+                    </div>
+                    <div class="right_info">
+                      <div class="title">
+                        <h2><a href="javascript:;" class="product_title">进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片进口莫斯哥薯片</a></h2>
+                      </div>
+                      <div class="desc">
+                        <span>12个悦享礼盒装<i class="iconfont icon-down_arrow"></i></span>
+                      </div>
+                      <div class="price_box">
+                        <span class="price">￥30.00</span>
+                        <div class="buy_num">
+                          <span class="num_reduce disable"><i class="iconfont icon-reduce"></i></span>
+                          <input type="number" class="num_box" data-min="1" data-max="100" value="1">
+                          <span class="num_add"><i class="iconfont icon-add1"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro_delete_btn" style="z-index:-1;">
+                  <div class="slide_to_follow"><p>移入</p><p>关注</p></div>
+                  <div class="slide_to_delete"><p>删除</p></div>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <!-- 抢购商品结束 -->
+      </div>
+
+      <div class="confirm_box">
+        <label class="handle"><input type="checkbox" checked="checked" name="check"></label>
+        <div class="total">
+          <span>全选</span>
+        </div>
+        <div class="price clearfix">
+          <div class="price_wrap">
+            <p><small>￥</small>476.93</p>
+            <span>(不含运费)</span>
+          </div>
+          <div class="discount_total">
+            <span>总优惠￥100.0</span>
+          </div>
+        </div>
+        <button class="confirm">去结算<span class="num">(33)</span></button>
+      </div>
+    </div>
+
+    <div class="layer_mask"></div>
+  </div>
+</div>
+
+
+<div class="add_cart_tip" style="display: none;">
+  <div class="text">
+    该商品为特价商品，<br/>
+    您最多只能购买N件
+  </div>
+</div>
+<!-- 换购商品的弹层 style="display: none"-->
+<div class="pop_back"  style="display: none">
+  <div class="pop_content">
+    <div class="pop_head clearfix">
+      <span class="pop_head_tit">
+        换购商品
+      </span>
+      <!-- <span class="icon-clear icon_error"></span> -->
+      <img src="../resource/images/close@2x.png" alt="" class="icon_error">
+    </div>
+    <div class="bag_change">
+    <div class="pop_bag">
+      <div class="bag_item">
+        <div class="bag_link">
+          <label class="right_now"><input type="checkbox" checked="checked" name="check"></label>
+          <a href="#" class="img_gred">
+           <img src="../resource/images/bag_new.png" alt="" class="img_big_bag">
+          </a>
+          <div class="right_text">
+            <div class="right_drew">
+              <p class="now_p"><a href="#" class="drew_now">CHLOE窥衣箱包女士 drew bag 小号单肩斜跨链条包</a></p>
+            </div>
+            <div class="price_good">
+              <span class="pricing">换购价:</span>
+              <span class="pricing_red">&yen;12489.90</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="pop_bag">
+      <div class="bag_item">
+        <div class="bag_link">
+          <label class="right_now"><input type="checkbox" checked="checked" name="check"></label>
+          <a href="#" class="img_gred">
+           <img src="../resource/images/bag_new.png" alt="" class="img_big_bag">
+          </a>
+          <div class="right_text">
+            <div class="right_drew">
+              <p class="now_p"><a href="#" class="drew_now">CHLOE窥衣箱包女士 drew bag 小号单肩斜跨链条包</a></p>
+            </div>
+            <div class="price_good">
+              <span class="pricing">换购价:</span>
+              <span class="pricing_red">&yen;12489.90</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pop_bag last_bag">
+      <div class="bag_item">
+        <div class="bag_link">
+          <img src="../resource/images/gred_square.png" alt="" class="right_now_change">  
+          <a href="#" class="img_gred img_new">
+           <img src="../resource/images/bag_new.png" alt="" class="img_big_bag">
+          </a>
+          <div class="right_text">
+            <div class="right_drew ">
+              <p class="now_p"><a href="#" class="drew_now right_drew_last">CHLOE窥衣箱包女士 drew bag 小号单肩斜跨链条包</a></p>
+            </div>
+            <div class="price_good ">
+              <span class="pricing price_last">换购价:</span>
+              <span class="pricing_red price_last">&yen;12489.90</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="shop_full">
+        <p class="full">购满<em class="super_price">&yen;2000</em><span class="charge_count">可换购此商品</span></p>
+      </div>
+    </div>
+    </div>
+   <div class="change_buy clearfix">
+        <p class="amount">已换购<span class="change_red">1/2</span>件</p>
+        <a href="#" class="btn">确定</a>
+   </div>
+
+  </div>
+</div>
+<!-- 换购商品结束 -->
+
+
+
+<!-- 领取赠品的弹层 -->
+<div class="pop_back_give" style="display: none">
+  <div class="pop_content">
+    <div class="pop_head clearfix">
+      <span class="pop_head_tit">
+        领取赠品
+      </span>
+      <!-- <span class="icon-clear icon_error"></span> -->
+      <img src="../resource/images/close@2x.png" alt="" class="icon_error error_one">
+    </div>
+    <div class="pop_bages">
+    <div class="pop_bag">
+      <div class="bag_item">
+        <div class="bag_link">
+          <label class="right_now"><input type="checkbox" checked="checked" name="check"></label>
+          <a href="#" class="img_gred">
+           <img src="../resource/images/bag_new.png" alt="" class="img_big_bag">
+          </a>
+          <div class="right_text">
+            <div class="right_drew">
+              <p class="now_p"><a href="#" class="drew_now">CHLOE窥衣箱包女士 drew bag 小号单肩斜跨链条包</a></p>
+            </div>
+            <div class="price_good">
+              <span class="pricing_red">&yen;0.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="pop_bag last_bag">
+      <div class="bag_item">
+        <div class="bag_link">
+          <img src="../resource/images/gred_square.png" alt="" class="right_now_change"> 
+          <a href="#" class="img_gred img_new">
+           <img src="../resource/images/bag_new.png" alt="" class="img_big_bag">
+          </a>
+          <div class="right_text">
+            <div class="right_drew ">
+              <p class="now_p"><a href="#" class="drew_now right_drew_last">CHLOE窥衣箱包女士 drew bag 小号单肩斜跨链条包</a></p>
+            </div>
+            <div class="price_good ">
+              <!-- <span class="pricing price_last">换购价:</span> -->
+              <span class="pricing_red price_last">&yen;12489.90</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="shop_full">
+        <p class="full">购满<em class="super_price">&yen;2000</em><span class="charge_count">可领取该赠品</span></p>
+      </div>
+    </div>
+    </div>
+   <div class="change_buy clearfix">
+        <p class="amount">已领取<span class="change_red">1/1</span>件</p>
+        <a href="#" class="btn">确定</a>
+   </div>
+
+  </div>
+</div>
+<!-- 领取赠品的弹层结束 -->
+
+<!-- 领取优惠券弹层开始 -->
+<div class="pop_back_ticket" style="display: none">
+  <div class="pop_content">
+    <div class="pop_head clearfix">
+      <span class="pop_head_tit">
+        优惠券
+      </span>
+      <!-- <span class="icon-clear icon_error"></span> -->
+      <img src="../resource/images/close@2x.png" alt="" class="icon_error error_two">
+   </div>
+   <div class="pop_main_now">
+   <div class="pop_main">
+     <div class="main_head">
+       <p class="text_ticket">可领优惠券:</p>
+     </div>
+    <div class="ticket_take">
+     <div class="ticket_main">
+
+       <div class="ticket_left">
+          <img src="../resource/images/coupon1@3x.png" alt="" class="left_bar">
+          
+          <div class="left_number">
+            <p class="number">&yen;<span class="number_two">20</span></p>
+            <p class="discount">满2000减</p>
+          </div>
+          <div class="right_number">
+            <p class="all">全品类(特殊商品除外)</p>
+            <p class="date">2017.10.20~2017.10.23</p>
+          </div>
+         
+       </div>
+       <div class="ticket_right">
+        <img src="../resource/images/c-button1@2x.png" alt="" class="right_bar">
+          <a class="take">领取</a>
+       </div>
+
+     </div>
+    <div class="make_all clearfix">
+        <div class="ticket_bottom">
+          <span class="shop_fruit">购物车中可用此劵商品</span>
+          <img src="../resource/images/arrow2@2x.png" alt="" class="pic_down down_one">
+      </div>
+       <div class="ceraty">
+       <div class="all_fruit">
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+       </div>
+       </div>
+    </div>
+  </div>
+    <div class="ticket_take ticket_pon">
+    <div class="ticket_main">
+       <div class="ticket_left">
+          <img src="../resource/images/coupon1@3x.png" alt="" class="left_bar">
+          
+          <div class="left_number">
+            <p class="number number_first">8<span class="number_two change_number">.8</span><em class="three">折</em></p>
+            <p class="discount">满200享</p>
+          </div>
+          <div class="right_number">
+            <p class="all">全品类(特殊商品除外)</p>
+            <p class="date">2017.10.20~2017.10.23</p>
+          </div>
+         
+       </div>
+       <div class="ticket_right">
+        <img src="../resource/images/c-button1@2x.png" alt="" class="right_bar">
+          <a class="take">领取</a>
+       </div>
+
+     </div>
+     <div class="make_all clearfix">
+     <div class="ticket_bottom">
+      <span class="shop_fruit">购物车中可用此劵商品</span>
+      <img src="../resource/images/arrow2@2x.png" alt="" class="pic_down down_two">
+     </div>
+      <div class="ceraty_two">
+       <div class="all_fruit">
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+       </div>
+       </div>
+    </div>
+     </div>
+  </div>
+
+  <div class="pop_main">
+     <div class="main_head">
+       <p class="text_ticket">已领优惠券:</p>
+     </div>
+     <div class="ticket_main">
+       <div class="ticket_left">
+          <img src="../resource/images/coupon2@3x.png" alt="" class="left_bar">
+          
+          <div class="left_number ">
+            <p class="number new_left">&yen;<span class="number_two  number_big">200</span></p>
+            <p class="discount new_left">满2000减</p>
+          </div>
+          <div class="right_number new_right">
+            <p class="all new_left">全品类(特殊商品除外)</p>
+            <p class="date new_left">2017.10.20~2017.10.23</p>
+          </div>
+         
+       </div>
+       <div class="ticket_right">
+        <img src="../resource/images/c-button2@2x.png" alt="" class="right_bar">
+          <a class="take">去使用</a>
+       </div>
+
+     </div>
+    <div class="make_all clearfix">
+        <div class="ticket_bottom">
+          <span class="shop_fruit">购物车中可用此劵商品</span>
+          <img src="../resource/images/arrow2@2x.png" alt="" class="pic_down down_three">
+      </div>
+       <div class="ceraty_three">
+       <div class="all_fruit">
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+       </div>
+       </div>
+    </div>
+   
+  </div>
+</div>
+ </div>
+</div>
+
+<!-- 领取优惠券弹层结束 -->
+
+
+<!-- 领券高度限制开始-->
+<div class="pop_back_count" style = "display:none">
+  <div class="pop_content">
+    <div class="pop_head clearfix">
+      <span class="pop_head_tit">
+        优惠券
+      </span>
+      <!-- <span class="icon-clear icon_error"></span> -->
+      <img src="../resource/images/close@2x.png" alt="" class="icon_error error_three">
+   </div> 
+   <div class="pop_main">
+     <div class="main_head">
+       <p class="text_ticket">可领优惠券:</p>
+     </div>
+    <div class="ticket_take">
+     <div class="ticket_main">
+
+       <div class="ticket_left">
+          <img src="../resource/images/coupon1@3x.png" alt="" class="left_bar">
+          
+          <div class="left_number">
+            <p class="number">&yen;<span class="number_two">20</span></p>
+            <p class="discount">满2000减</p>
+          </div>
+          <div class="right_number">
+            <p class="all">全品类(特殊商品除外)</p>
+            <p class="date">2017.10.20~2017.10.23</p>
+          </div>
+         
+       </div>
+       <div class="ticket_right">
+        <img src="../resource/images/c-button1@2x.png" alt="" class="right_bar">
+          <a class="take">领取</a>
+       </div>
+
+     </div>
+    <div class="make_all clearfix">
+        <div class="ticket_bottom">
+          <span class="shop_fruit">购物车中可用此劵商品</span>
+          <img src="../resource/images/pic_top.png" alt="" class="pic_top">
+      </div>
+       <div class="ceraty">
+       <div class="all_fruit">
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+       </div>
+       </div>
+    </div>
+  </div>
+    <div class="ticket_take ticket_pon">
+    <div class="ticket_main">
+       <div class="ticket_left">
+          <img src="../resource/images/coupon1@3x.png" alt="" class="left_bar">
+          
+          <div class="left_number">
+            <p class="number number_first">8<span class="number_two change_number">.8</span><em class="three">折</em></p>
+            <p class="discount">满200享</p>
+          </div>
+          <div class="right_number">
+            <p class="all">全品类(特殊商品除外)</p>
+            <p class="date">2017.10.20~2017.10.23</p>
+          </div>
+         
+       </div>
+       <div class="ticket_right">
+        <img src="../resource/images/c-button1@2x.png" alt="" class="right_bar">
+          <a class="take">领取</a>
+       </div>
+
+     </div>
+     <div class="make_all clearfix">
+     <div class="ticket_bottom">
+      <span class="shop_fruit">购物车中可用此劵商品</span>
+      <img src="../resource/images/arrow2@2x.png" alt="" class="pic_down">
+     </div>
+    </div>
+     </div>
+  </div>
+
+  <div class="pop_main">
+     <div class="main_head">
+       <p class="text_ticket">已领优惠券:</p>
+     </div>
+    <!--  <div class="ticket_main">
+       <div class="ticket_left">
+          <img src="../resource/images/coupon2@3x.png" alt="" class="left_bar">
+          
+          <div class="left_number ">
+            <p class="number new_left">&yen;<span class="number_two">200</span></p>
+            <p class="discount new_left">满2000减</p>
+          </div>
+          <div class="right_number new_right">
+            <p class="all new_left">全品类(特殊商品除外)</p>
+            <p class="date new_left">2017.10.20~2017.10.23</p>
+          </div>
+         
+       </div>
+       <div class="ticket_right">
+        <img src="../resource/images/c-button2@2x.png" alt="" class="right_bar">
+          <span class="take">去使用</span>
+       </div>
+
+     </div>
+    <div class="make_all clearfix">
+        <div class="ticket_bottom">
+          <span class="shop_fruit">购物车中可用此劵商品</span>
+          <img src="../resource/images/pic_top.png" alt="" class="pic_top">
+      </div>
+       <div class="ceraty">
+       <div class="all_fruit">
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+         <div class="all_first">
+           <img src="../resource/images/orange.png" alt="" class="orange">
+           <p class="price_first">&yen;12.0</p>
+         </div>
+       </div>
+       </div>
+    </div> -->
+   
+  </div>
+
+ </div>
+</div>
+<!-- 领劵高度限制结束 -->
+
+<!-- 领劵空态弹层开始 -->
+<div class="pop_back_empty" style="display:none">
+  <div class="pop_content">
+    <div class="pop_head clearfix">
+      <span class="pop_head_tit">
+        优惠券
+      </span>
+      <!-- <span class="icon-clear icon_error"></span> -->
+      <img src="../resource/images/close@2x.png" alt="" class="icon_error error_four">
+   </div> 
+   <div class="error_stop">
+   <div class="error_ticket">
+     <img src="../resource/images/coupon-kongtai@2x.png" alt="" class="coupon_errors">
+     <span class="error_content">暂无可领优惠券</span>
+   </div>
+  <div class="pop_main">
+     <div class="main_head">
+       <p class="text_ticket">已领优惠券:</p>
+     </div>
+     <div class="ticket_main main_empty">
+       <div class="ticket_left">
+          <img src="../resource/images/coupon2@3x.png" alt="" class="left_bar">
+          
+          <div class="left_number ">
+            <p class="number new_left">&yen;<span class="number_two number_big">200</span></p>
+            <p class="discount new_left">满2000减</p>
+          </div>
+          <div class="right_number new_right">
+            <p class="all new_left">全品类(特殊商品除外)</p>
+            <p class="date new_left">2017.10.20~2017.10.23</p>
+          </div>
+         
+       </div>
+       <div class="ticket_right">
+        <img src="../resource/images/c-button2@2x.png" alt="" class="right_bar">
+          <span class="take">去使用</span>
+       </div>
+
+     </div>
+    
+   
+  </div>
+</div>
+ </div>
+</div>
+<!-- 领劵空态弹层结束 -->
+
+<!-- 修改促销弹层开始 -->
+
+<div class="pop_back_discount" style="display: none">
+  <div class="pop_content">
+    <div class="pop_head clearfix">
+      <span class="pop_head_tit">
+        修改促销
+      </span>
+      <!-- <span class="icon-clear icon_error"></span> -->
+      <img src="../resource/images/close@2x.png" alt="" class="icon_error error_five">
+   </div> 
+  <div class="count">
+  <div class="pop_main_discount clearfix">
+      <label class="right_now"><input type="checkbox" checked="checked" name="check"></label>
+      <span class="num_discount">满199减100</span>
+  </div>
+  <div class="pop_main_discount">
+      <label class="right_now"><input type="checkbox" checked="checked" name="check"></label>
+      <span class="num_discount">满199减100</span>
+  </div>
+  <div class="pop_main_discount">
+      <label class="right_now"><input type="checkbox" checked="checked" name="check"></label>
+      <span class="num_discount">满199减100</span>
+  </div>
+ </div>
+ </div>
+</div>
+
+<!-- 修改促销弹层结束 -->
+
+<!-- 商详页的弹窗开始 -->
+<div class="pop_back_detail" style="display: none">  
+  <div class="pd_product-property">
+        <div class="pd_product-property-info">
+            <div class="pd_product-property-pic">
+                <img src="http://d8.yihaodianimg.com/N03/M05/6A/4E/CgQCs1HAD8OAP0U-AAETwg93dFk09500_140x140.jpg" width="70" height="70" alt="">
+            </div>
+            <div class="pd_product-property-title-wrap">
+                <div class="pd_product-property-price">
+                    ￥958
+                </div>
+                <div class="pd_product-property-select">
+                    已选择：红色 红色
+                </div>
+                 <img src="../resource/images/close@2x.png" alt="" class="icon_error_detail">
+            </div>
+
+        </div>
+        <div class="property-wrapper">
+            <div class="pd_product-property-box item-attribute">
+                <div class="pd_product-property-type">
+                    <div class="pd_product-property-box-title-row">
+                        <span class="pd_product-property-box-title">子码title 1</span>                    
+                    </div>
+                    <ul class="pd_product-property-box-select">
+                        <li class="pd_product-property-box-select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">白色</li>
+                        <li class="pd_product-property-box-select-item disabled-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">黄色</li>
+                        <li class="pd_product-property-box-select-item select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">红色</li>
+                        <li class="pd_product-property-box-select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">蓝黄色</li>
+                        <li class="pd_product-property-box-select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">乐事薯片</li>
+                        <li class="pd_product-property-box-select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">乐事原味薯片</li>
+                        <li class="pd_product-property-box-select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">蓝月亮 至尊「浓缩+」洗衣液滚筒洗衣机专用（亮白增艳）素雅兰香 660g/瓶</li>
+                        <li class="pd_product-property-box-select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">蓝月亮 至尊「浓缩+」洗衣液滚筒洗衣机专用（亮白增艳）素雅兰香 660g/瓶</li>
+                    </ul>
+                </div>
+                <div class="pd_product-property-type">
+                    <div class="pd_product-property-box-title-row">
+                        <span class="pd_product-property-box-title">子码title 2</span>
+                    </div>
+                    <ul class="pd_product-property-box-select">
+                        <li class="pd_product-property-box-select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">白色</li>
+                        <li class="pd_product-property-box-select-item disabled-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">黄色</li>
+                        <li class="pd_product-property-box-select-item select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">红色</li>
+                        <li class="pd_product-property-box-select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">蓝黄色</li>
+                        <li class="pd_product-property-box-select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">乐事薯片</li>
+                        <li class="pd_product-property-box-select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">乐事原味薯片</li>
+                        <li class="pd_product-property-box-select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">蓝月亮 至尊「浓缩+」洗衣液滚筒洗衣机专用（亮白增艳）素雅兰香 660g/瓶</li>
+                        <li class="pd_product-property-box-select-item" data-product-pic="http://d7.yihaodianimg.com/N01/M0A/97/06/CgQCrVMz2MeAIMi9AABmUuhVm_c31200_160x160.jpg">蓝月亮 至尊「浓缩+」洗衣液滚筒洗衣机专用（亮白增艳）素雅兰香 660g/瓶</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pd_product-property-box">
+                <div class="pd_product-property-type item-deliver-service">
+                    <div class="pd_product-property-box-title-row">
+                        <span class="pd_product-property-box-title">送装服务</span>
+                        <a class="pd_product-property-box-link">服务介绍</a>
+                    </div>
+                    <div class="pd_product-property-box-title-spec">
+                        已选：服务三服务三服务三服务三服务三服务三服务三服务三服务三
+                    </div>
+                    <ul class="pd_product-property-box-select">
+                        <li class="pd_product-property-box-select-item">服务一</li>
+                        <li class="pd_product-property-box-select-item">服务二</li>
+                        <li class="pd_product-property-box-select-item select-item">服务三</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pd_product-property-box">
+                <div class="pd_product-property-box-title-row">
+                    <span class="pd_product-property-box-title">购买数量</span>
+                    <div class="pd_product-num-wrap" id="prodNum">
+                        <span class="pd_product-num-minus pd_product-num_disable J_ping" ></span>
+                        <input class="pd_product-num-form" type="number" min="1" value="1" max="199" required="">
+                        <span class="pd_product-num-plus J_ping" ></span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       <!--  <a href="javascript:;" class="property-close">
+            <span class="icon-clear"></span>
+        </a> -->
+    </div>
+  <div class="pd_product-buy-num show">
+            <div class="pd_product-num-wrap" style="display: none;">
+                <span class="pd_product-num-minus pd_product-num_disable"></span>
+                <input class="pd_product-num-form" type="number" min="1" value="1" required>
+                <span class="pd_product-num-plus"></span>
+            </div>
+            <a href="javascript:;" class="pd_buy-now">立即购买</a>
+            <a href="javascript:;" class="pd_add-cart">加入购物车</a>        
+            <a class="pd_shop-cart icon-shop_cart J_ping" style="display: none;">
+                <span class="num" style="">2</span>
+            </a>
+   </div>
+  
+</div>
+<!-- 商详页弹层结束 -->
+
+<!-- 公用弹框  商品数量为1时点击减号调用些弹框 s-->
+<div class="pop_box" style="display: none;">
+  <div class="pop_con">
+    <div class="content">
+      <div class="text">确定要删除此商品吗?</div>
+    </div>
+    <div class="set_btn">
+      <a href="#" class="btn_del">删除</a>
+      <a href="#" class="btn_cal close">取消</a>
+    </div>
+  </div>
+</div>
+<!-- 公用弹框  商品数量为1时点击减号调用些弹框 e-->
+
+<script>
+    require.config({
+        baseUrl : "../resource/scripts/",
+        paths: {
+            "zepto": "https://img.yihaodianimg.com/yhdfe/public/scripts/lib/zepto/zepto.min",
+            "fastclick" : "https://img.yihaodianimg.com/yhdfe/public/scripts/lib/fastclick/lib/fastclick"
+        }
+    });
+
+    var config = {
+        staticUrl:"..",
+        publicUrl : "https://img.yihaodianimg.com/yhdfe/public"
+    }
+
+    require(["shoppingCart_2018"], function(Main) {
+        Main.init(config);
+    });
+</script>
+
+    </div>
+</body>
+</html>
